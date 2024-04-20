@@ -5,19 +5,6 @@ const nama = urlParams.get("nama");
 // Menampilkan nama di dalam elemen dengan id 'nama'
 document.getElementById("nama").textContent = nama;
 
-function closeOverlay() {
-  var overlay = document.getElementById("overlay");
-  var additionalContent = document.getElementById("additionalContent");
-
-  overlay.style.opacity = "0";
-
-  setTimeout(function () {
-    overlay.style.display = "none";
-    additionalContent.style.display = "block";
-    startSlideshow();
-  }, 2000);
-}
-
 /*function startSlideshow() {
   var index = 0;
   showSlides();
@@ -173,9 +160,7 @@ function closeOverlay() {
   setTimeout(function () {
     overlay.style.display = "none";
     additionalContent.style.display = "block";
-    startSlideshow();
-    backgroundMusic.play(); // Memainkan lagu saat overlay ditutup
-    musicIcon.classList.add("rotate"); // Menambahkan kelas rotasi saat lagu dimulai
+    toggleMusic();
   }, 2000);
 }
 
