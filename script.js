@@ -114,6 +114,7 @@ function createReminder() {
 const button1 = document.getElementById('myButton1');
 const button2 = document.getElementById('myButton2');
 const button3 = document.getElementById('myButton3');
+const button4 = document.getElementById('myButton4');
 
 // Add click event listener to each button
 button1.addEventListener('click', function() {
@@ -140,6 +141,17 @@ button2.addEventListener('click', function() {
 
 button3.addEventListener('click', function() {
   const valueToCopy = this.dataset.value;
+  navigator.clipboard.writeText(valueToCopy)
+    .then(() => {
+      alert('Berhasil di-copy ke clipboard!');
+    })
+    .catch(error => {
+      console.error('Gagal meng-copy nilai:', error);
+    });
+});
+
+button4.addEventListener('click', function() {
+  const valueToCopy = this.dataset.value; // Get the value from data-value attribute
   navigator.clipboard.writeText(valueToCopy)
     .then(() => {
       alert('Berhasil di-copy ke clipboard!');
