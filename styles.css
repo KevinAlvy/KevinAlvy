@@ -623,6 +623,11 @@ img {
     padding: 5px 10px;
   }
 
+  #comment-section ul#comments {
+    height: 300px; /* Atur ketinggian kolom komentar sesuai kebutuhan */
+    overflow-y: auto; /* Aktifkan scroll vertikal */
+  }
+
   #comment-section {
     max-width: 75%;
     margin: 0 auto;
