@@ -22,6 +22,7 @@ body {
     opacity: 1;
     transition: opacity 2.5s ease;
     z-index: 2;
+    transition: background-image 1s ease-in-out; /* Transisi untuk efek crossfade */
 }
 
 .overlay h1 {

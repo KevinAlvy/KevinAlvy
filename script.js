@@ -219,3 +219,31 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Array of background image URLs
+const backgroundImages = [
+  "url('scr/img/1712883361466_6_11zon.jpg')",
+  "url('scr/img/1712883361682_1_11zon.jpg')",
+  "url('scr/img/1712911550919_3_11zon.jpg')"
+];
+
+let currentBackgroundIndex = 0; // Variable to store the current background image index
+const overlay = document.getElementById("overlay");
+
+function changeBackgroundImage() {
+  // Ganti gambar latar belakang overlay
+  overlay.style.backgroundImage = backgroundImages[currentBackgroundIndex];
+
+  // Tambahkan indeks untuk gambar latar belakang berikutnya
+  currentBackgroundIndex++;
+
+  // Reset indeks ke 0 jika melebihi panjang array gambar latar belakang
+  if (currentBackgroundIndex >= backgroundImages.length) {
+    currentBackgroundIndex = 0;
+  }
+}
+
+// Panggil fungsi untuk mengganti gambar latar belakang secara awal
+changeBackgroundImage();
+
+// Atur interval untuk mengganti gambar latar belakang setiap 6 detik
+setInterval(changeBackgroundImage, 6000);
