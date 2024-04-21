@@ -246,4 +246,4 @@ function changeBackgroundImage() {
 changeBackgroundImage();
 
 // Atur interval untuk mengganti gambar latar belakang setiap 6 detik
-setInterval(changeBackgroundImage, 4000);
+setInterval(changeBackgroundImage, 2000);
