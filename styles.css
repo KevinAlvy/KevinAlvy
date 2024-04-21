@@ -29,7 +29,7 @@ body {
     margin-top: 10%;
     font-size: 28px;
     line-height: 1;
-    /*font-family: 'Sulphur Point', sans-serif;*/
+    font-family: 'Bodoni Moda', serif;
     font-weight: lighter;
 }
 
@@ -37,7 +37,8 @@ body {
   margin: 0;
     font-size: 36px;
     line-height: 1;
-    /*font-family: 'Tangerine', cursive;*/
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 300;
 }
 
 .overlay-content h2 span {
